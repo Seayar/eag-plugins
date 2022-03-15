@@ -1,0 +1,109 @@
+{
+  "version": "1.5.1.4",
+  "deviceFields": [
+    {
+      "name": "ip",
+      "cName": "远程IP地址",
+      "type": "STRING",
+      "typeValue": null
+    },
+    {
+      "name": "user",
+      "cName": "当前登陆用户账号",
+      "type": "STRING",
+      "typeValue": null
+    }
+  ],
+  "pointFields": [
+    {
+      "name": "function",
+      "cName": "功能选择",
+      "type": "TREE",
+      "typeValue": {
+        "initValue": null,
+        "data": [
+          {
+            "key": "终端状态采集",
+            "value": "status",
+            "children": [
+              {
+                "key": "终端状态",
+                "value": "status1"
+              },
+              {
+                "key": "目标终端",
+                "value": "status2"
+              },
+              {
+                "key": "发起方/接收方",
+                "value": "status3"
+              }
+            ]
+          },
+          {
+            "key": "终端控制",
+            "value": "control",
+            "children": [
+              {
+                "key": "对讲",
+                "value": "control1"
+              },
+              {
+                "key": "监听",
+                "value": "control2"
+              },
+              {
+                "key": "广播",
+                "value": "control3"
+              }
+            ]
+          },
+          {
+            "key": "执行任务",
+            "value": "task"
+          }
+        ]
+      }
+    },
+    {
+      "name": "source",
+      "cName": "源终端",
+      "type": "STRING",
+      "typeValue": null,
+      "required": false
+    },
+    {
+      "name": "act",
+      "cName": "动作启停",
+      "type": "ENUM",
+      "typeValue": {
+        "initValue": null,
+        "data": [
+          {
+            "key": "开始",
+            "value": "0"
+          },
+          {
+            "key": "停止",
+            "value": "1"
+          },
+          {
+            "key": "接听",
+            "value": "2"
+          }
+        ]
+      },
+      "required": false
+    }
+  ],
+  "registerTypes": [
+    {
+      "name": "控制寄存器",
+      "value": "control"
+    },
+    {
+      "name": "状态寄存器",
+      "value": "status"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "version": "1.5.2.1",
+  "deviceFields": [
+    {
+      "name": "ip",
+      "cName": "广播地址",
+      "type": "STRING",
+      "typeValue": null
+    },
+    {
+      "name": "port",
+      "cName": "远程端口",
+      "type": "NUM",
+      "typeValue": null
+    },
+    {
+      "name": "localPort",
+      "cName": "本地端口",
+      "type": "NUM",
+      "typeValue": null
+    }
+  ],
+  "pointFields": [
+    {
+      "name": "defense_no",
+      "cName": "防区号",
+      "type": "NUM",
+      "typeValue": null
+    }
+  ],
+  "batchInsertFields": [
+    {
+      "name": "defense_start_no",
+      "cName": "起始防区号",
+      "type": "NUM",
+      "typeValue": null
+    },
+    {
+      "name": "defense_num",
+      "cName": "防区数量",
+      "type": "NUM",
+      "typeValue": null
+    }
+  ],
+  "registerTypes": [
+    {
+      "name": "寄存器",
+      "value": "register"
+    }
+  ]
+}

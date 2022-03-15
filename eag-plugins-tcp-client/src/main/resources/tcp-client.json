@@ -1,0 +1,116 @@
+{
+  "version": "1.5.1.2",
+  "deviceFields": [
+    {
+      "name": "ip",
+      "cName": "服务器IP",
+      "type": "STRING",
+      "typeValue": null
+    },
+    {
+      "name": "port",
+      "cName": "服务器端口",
+      "type": "NUM",
+      "typeValue": null
+    },
+    {
+      "name": "hexStr",
+      "cName": "十六进制/字符串",
+      "type": "ENUM",
+      "typeValue": {
+        "initValue": "hex",
+        "data": [
+          {
+            "key": "十六进制",
+            "value": "hex"
+          },
+          {
+            "key": "字符串",
+            "value": "str"
+          }
+        ]
+      }
+    },
+    {
+      "name": "maxBytes",
+      "cName": "最大可能字节数",
+      "type": "NUM",
+      "typeValue": null
+    },
+    {
+      "name": "heartSend",
+      "cName": "心跳发送",
+      "type": "STRING",
+      "typeValue": null,
+      "required": false
+    },
+    {
+      "name": "heartInterval",
+      "cName": "心跳间隔",
+      "type": "NUM",
+      "typeValue": null,
+      "required": false
+    },
+    {
+      "name": "heartCheck",
+      "cName": "心跳检测模式",
+      "type": "STRING",
+      "typeValue": null,
+      "required": false
+    },
+    {
+      "name": "heartDelay",
+      "cName": "检测延时",
+      "type": "NUM",
+      "typeValue": null,
+      "required": false
+    },
+    {
+      "name": "keys",
+      "cName": "点位key模式",
+      "type": "STRING",
+      "typeValue": null,
+      "required": false
+    }
+  ],
+  "pointFields": [
+    {
+      "name": "key",
+      "cName": "读值点位key",
+      "type": "STRING",
+      "typeValue": null,
+      "required": false
+    },
+    {
+      "name": "adder",
+      "cName": "字节拼接",
+      "type": "STRING",
+      "typeValue": null,
+      "required": false
+    },
+    {
+      "name": "mode",
+      "cName": "写值模式",
+      "type": "STRING",
+      "typeValue": null,
+      "required": false
+    },
+    {
+      "name": "time",
+      "cName": "定期写值",
+      "type": "NUM",
+      "typeValue": {
+        "initValue": 0
+      },
+      "required": false
+    }
+  ],
+  "batchInsertFields": [
+  ],
+  "registerTypes": [
+    {
+      "name": "寄存器",
+      "value": "register"
+    }
+  ]
+}

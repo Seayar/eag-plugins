@@ -1,0 +1,18 @@
+# idea
+.idea/
+*.iml
+
+# jRebel
+rebel.xml
+
+# test
+src/test
+
+# target
+target/
+
+# oracle
+*.pdb
+
+*.txt
+*.log
